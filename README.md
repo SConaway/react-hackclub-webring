@@ -15,7 +15,7 @@ npm install --save react-hackclub-webring
 ### Code Example
 
 ```jsx
-import React, { Component } from 'react'
+import React from 'react'
 
 import { HackClubWebring, fetchWebringData } from 'react-hackclub-webring'
 import 'react-hackclub-webring/dist/index.css' // be sure to import the styles
