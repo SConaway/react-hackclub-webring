@@ -21,7 +21,8 @@
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/build",
+    "release": "if [[ \"$npm_execpath\" == *\"yarn\"* ]]; then echo \"Don't use yarn, use npm instead\"; else HUSKY_SKIP_HOOKS=1 release-it -VV; fi"
   },
   "peerDependencies": {
     "react": "^16.0.0"
@@ -45,7 +46,8 @@
     "prettier": "^2.0.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^4.0.3",
+    "release-it": "^14.5.1"
   },
   "files": [
     "dist"
