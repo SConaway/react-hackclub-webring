@@ -1,6 +1,6 @@
 {
-  "short_name": "hackclub-webring",
-  "name": "hackclub-webring",
+  "short_name": "react-hackclub-webring-example",
+  "name": "react-hackclub-webring-example",
   "icons": [
     {
       "src": "favicon.ico",

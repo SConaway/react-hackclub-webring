@@ -1,13 +1,13 @@
 import React from 'react'
 import Head from 'next/head'
 
-import { HackClubWebring, fetchWebringData } from 'hackclub-webring'
+import { HackClubWebring, fetchWebringData } from 'react-hackclub-webring'
 
 const App = ({ webringData }) => {
   return (
     <>
       <Head>
-        <title>hackclub-webring example</title>
+        <title>react-hackclub-webring example</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <HackClubWebring webringData={webringData} domainName='example.com' />

@@ -1,13 +1,13 @@
-# hackclub-webring
+# react-hackclub-webring
 
 > react library for https://github.com/hackclub/webring that supports SSR
 
-[![NPM](https://img.shields.io/npm/v/hackclub-webring.svg)](https://www.npmjs.com/package/hackclub-webring) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-hackclub-webring.svg)](https://www.npmjs.com/package/react-hackclub-webring) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save hackclub-webring
+npm install --save react-hackclub-webring
 ```
 
 ## Usage
@@ -17,8 +17,8 @@ npm install --save hackclub-webring
 ```jsx
 import React, { Component } from 'react'
 
-import { HackClubWebring, fetchWebringData } from 'hackclub-webring'
-import 'hackclub-webring/dist/index.css' // be sure to import the styles
+import { HackClubWebring, fetchWebringData } from 'react-hackclub-webring'
+import 'react-hackclub-webring/dist/index.css' // be sure to import the styles
 
 const Example = () => {
   const [webringData, setWebringData] = useState(null)

@@ -1,10 +1,10 @@
 {
-  "name": "hackclub-webring",
+  "name": "react-hackclub-webring",
   "version": "0.0.0",
   "description": "react library for https://github.com/hackclub/webring",
   "author": "SConaway",
   "license": "MIT",
-  "repository": "SConaway/hackclub-webring",
+  "repository": "SConaway/react-hackclub-webring",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",

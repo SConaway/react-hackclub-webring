@@ -1,5 +1,5 @@
 {
-  "name": "example-next",
+  "name": "react-hackclub-webring-example-next",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,6 +11,6 @@
     "next": "^10.1.3",
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
-    "hackclub-webring": "link:.."
+    "react-hackclub-webring": "link:.."
   }
 }
