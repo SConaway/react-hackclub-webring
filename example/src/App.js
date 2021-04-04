@@ -1,10 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
-import { HackClubWebring } from 'hackclub-webring'
+import { HackClubWebring, fetchWebringData } from 'hackclub-webring'
 import 'hackclub-webring/dist/index.css'
 
 const App = () => {
-  return <HackClubWebring />
+  const [webringData, setWebringData] = useState(null)
+
+  useEffect(() => {
+    ;(async () => {
+      //
+      setWebringData(await fetchWebringData())
+    })()
+  }, [])
+
+  return <HackClubWebring webringData={webringData} domainName='example.com' />
 }
 
 export default App
