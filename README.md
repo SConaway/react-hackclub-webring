@@ -12,18 +12,29 @@ npm install --save hackclub-webring
 
 ## Usage
 
+### Code Example
+
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'hackclub-webring'
-import 'hackclub-webring/dist/index.css'
+import { HackClubWebring, fetchWebringData } from 'hackclub-webring'
+import 'hackclub-webring/dist/index.css' // be sure to import the styles
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const Example = () => {
+  const [webringData, setWebringData] = useState(null)
+
+  useEffect(() => {
+    ;(async () => {
+      //
+      setWebringData(await fetchWebringData())
+    })()
+  }, [])
+
+  return <HackClubWebring webringData={webringData} domainName='example.com' />
 }
 ```
+
+The library allows you to manage fetching the data when convenient by using `fetchWebringData()`. `example/` has an example of fetching it client-side, and `example-next/` has an example of fetching it when rendering on the server using NextJS's `getServerSideProps`.
 
 ## License
 
