@@ -22,7 +22,7 @@
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build",
-    "release": "if [[ \"$npm_execpath\" == *\"yarn\"* ]]; then echo \"Don't use yarn, use npm instead\"; else HUSKY_SKIP_HOOKS=1 release-it -VV; fi"
+    "release": "echo 'Run `npx release-it` instead' && exit 1"
   },
   "peerDependencies": {
     "react": "^16.0.0"
