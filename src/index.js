@@ -24,8 +24,8 @@ export const HackClubWebring = ({ domainName, webringData }) => {
   const links = useMemo(() => {
     if (!webringData?.length || webringData.length <= 0)
       return {
-        nextURI: '',
-        previousURI: ''
+        nextURI: 'https://webring.hackclub.com',
+        previousURI: 'https://webring.hackclub.com'
       }
 
     const currentIndex = webringData.findIndex(
@@ -34,8 +34,8 @@ export const HackClubWebring = ({ domainName, webringData }) => {
 
     if (currentIndex <= -1)
       return {
-        nextURI: '',
-        previousURI: ''
+        nextURI: 'https://webring.hackclub.com',
+        previousURI: 'https://webring.hackclub.com'
       }
 
     let previousIndex = currentIndex - 1
