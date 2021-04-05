@@ -12,6 +12,8 @@ npm install --save react-hackclub-webring
 
 ## Usage
 
+The library allows you to manage fetching the data when convenient by using `fetchWebringData()`. `example/` has an example of fetching it client-side; `example-next/` has an example of fetching it when rendering on the server using NextJS's `getServerSideProps`.
+
 ### Code Example
 
 ```jsx
@@ -34,7 +36,12 @@ const Example = () => {
 }
 ```
 
-The library allows you to manage fetching the data when convenient by using `fetchWebringData()`. `example/` has an example of fetching it client-side; `example-next/` has an example of fetching it when rendering on the server using NextJS's `getServerSideProps`.
+### Props
+
+| Prop        | Description                                                                                   | Default Value | Required | Notes                                                                                                                                                                                     |
+| ----------- | --------------------------------------------------------------------------------------------- | ------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| webringData | data from the `fetchWebringData()` function                                                   | none          | Yes      | Allows your app to manage fetching when convenient (for SSR and stuff)                                                                                                                    |
+| domainName  | the domain name of your website as on the [webring's home page](https://webring.hackclub.com) | none          | Yes      | For those of us with multiple domains for our websites, it allows the webring to work correctly. Also because when SSR with NextJS, I don't think `window.location.hostname` is available |
 
 ## License
 
