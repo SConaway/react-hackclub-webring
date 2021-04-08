@@ -8,6 +8,7 @@
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
+  "types": "src/index.d.ts",
   "engines": {
     "node": ">=10"
   },
@@ -28,6 +29,7 @@
     "react": "^16.0.0"
   },
   "devDependencies": {
+    "@types/react": "^17.0.3",
     "babel-eslint": "^10.0.3",
     "cross-env": "^7.0.2",
     "eslint": "^7.23.0",
