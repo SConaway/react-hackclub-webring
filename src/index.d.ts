@@ -1,5 +1,3 @@
-import React from 'react'
-
 export interface Person {
   url: string
   member: string
@@ -11,11 +9,12 @@ export interface HackclubWebringProps {
   domainName: string
 }
 
-declare module 'react-hackclub-webring' {
-  export function fetchWebringData(): Person[]
-  export function HackclubWebring(
-    webringData: Person[],
-    domainName: string
-  ): React.FC<HackclubWebringProps>
-  export function chop(url: string): string
-}
+export function chopURL(url: string): string
+export function HackClubWebring({
+  domainName,
+  webringData
+}: {
+  webringData: Person[]
+  domainName: string
+}): JSX.Element
+export function fetchWebringData(): Promise<Person[]>
